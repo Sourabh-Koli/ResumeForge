@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Template 2 - ResumEdge</title>
+		<link rel="stylesheet" href="/Css files/template2.css">
+		<link rel="Shortcut icon" type="image/png" href="/images/profile.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	</head>
+
+	<body>
+		<div class="resume" id="resume">
+			<header>
+				<div class="header">
+					<h1 style="margin:0% 0%;  font-size: 40px;" id="name">Stephen John</h1>
+					<h3 style="margin: 0% 0%;" id="role">Your Designation</h3>
+					<p style="font-size: small;" id="professionalD">My name is Stephen John. Lorem, ipsum dolor sit amet consectetur adipisicing
+						elit. Vero aliquam facilis
+						itaque, magnam, consectetur eligendi assumenda id veniam soluta quod numquam autem ipsa? Repellat fugit ut
+						tenetur ex quisquam perferendis illo blanditiis magnam rerum cupiditate!</p>
+					<h4 id="address"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;New York, USA</h4>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<h4 id="mob"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;+01 2342 4738 03</h4>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<h4 id="email"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;kevinpeterson@email.com</h4>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</div>
+				<div class="profileImg">
+					<img src="/images/profile2.jpeg" alt="Profile" width="180px" height="190px" id="profileImg">
+				</div>
+			</header>
+
+			<section class="experience">
+				<h2>WORK EXPERIENCE</h2>
+					<p id="job">
+						&nbsp;&nbsp;&nbsp;Job Title 1 : Compony Name <br>
+						Date from - to Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ad! Lorem ipsum dolor sit
+						amet, consectetur adipisicing elit. Officiis officia debitis saepe, numquam natus obcaecati vel sed
+						perspiciatis exercitationem dolore?
+					<br>
+					<br>
+					&nbsp;&nbsp;&nbsp;Job Title 2 : Compony Name <br>
+					Date from - to Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ad! Lorem ipsum dolor sit
+					amet, consectetur adipisicing elit. Officiis officia debitis saepe, numquam natus obcaecati vel sed
+					perspiciatis exercitationem dolore?
+				
+				
+				</p>
+			</section>
+
+			<section class="education">
+				<h2>EDUCATION</h2>
+				<p id="education">
+					&nbsp;&nbsp;&nbsp;COLLAGE OF USA: MASTER IN PROGRAMMING <br>
+					2015-2019: Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cum vero quod atque possimus culpa repudiandae a eum molestias quae! <br><br>
+					&nbsp;&nbsp;&nbsp;HIGH SCHOOL : STATE SYLLABUS <br>
+					2013-2015: Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cum vero quod
+					atque possimus culpa repudiandae a eum molestias quae! <br><br>
+
+				</p>
+			</section>
+
+			<section class="certification" style="margin-bottom: 30px;">
+				<h2>CERTIFICATION</h2>
+				<p id="certification">
+					Programming with Java: Nptel. <br>
+					Database management system: Nptel. <br>
+				</p>
+			</section>
+			<div style="display: flex;">
+				<section class="date" style="width: 60%; margin-top: 0%; padding-left: 4%; margin-bottom: 5%;">
+					<h2 style="border-bottom: none; background-color: white; color: rgba(1, 33, 55, 0.84); font-size: x-large; ">Date: </h2>
+					<p id="date" style="border-top: none;">
+						26 / 03 / 2024
+					</p>
+				</section>
+				<section style="width: 50%;margin-left: 30%; margin-top: 0%; padding-left: 4%; margin-bottom: 5%;">
+					<h2 style="border-bottom: none; background-color: white; color: rgba(1, 33, 55, 0.84); font-size: x-large; ">Signature</h2>
+					<img src="/images/sign2.jpeg" alt="Signature" id="sign" width="100px" height="50px" id="sign" style="margin-left: 6%;">
+				</section>
+			</div>
+		</div>
+		<div id="fillDetails">
+			<div class="heading">
+				<h1 style="color: rgba(1, 33, 55, 0.84);">Fill Details</h1>
+			</div>
+			<input type="text" id="nameInput" style="height: 30px;" placeholder="Enter your name" autofocus>
+			<input type="email" id="emailInput" style="height: 30px;" placeholder="Enter your email id" autofocus>
+			<input type="tel" id="mobInput" style="height: 30px;" placeholder="Enter your mobile no." autofocus>
+			<input type="text" id="roleInput" style="height: 30px;" placeholder="Enter your role" autofocus>
+			<input type="text" id="addressInput" style="height: 30px; margin-bottom: 2%;" placeholder="Enter your address"
+				autofocus>
+
+			<label for="profileImge"
+				style="margin-left:22%; position:static; font-weight: bold; color: rgba(1, 33, 55, 0.84); font-size: large;">Upload your
+				Image</label>
+			<input type="file" id="imageInput" onchange="updateImage()"
+				style="height: 30px; margin-top: 0%; margin-left: 20%;" placeholder="Upload your image in jpg" autofocus>
+			<textarea id="professionalInput" style="height: 100px; white-space: pre-wrap;"
+				placeholder="Enter your professional summary" autofocus></textarea>
+			<textarea id="experienceInput" style="height: 100px; white-space: pre-wrap;" placeholder="Enter your experience"
+				autofocus></textarea>
+			<textarea id="educationInput" style="height: 100px; white-space: pre-wrap;" placeholder="your education details"
+				autofocus></textarea>
+			<textarea id="certificationInput" style="height: 100px;" placeholder="Enter your certifications"
+				autofocus></textarea>
+			<input type="date" name="date" id="dateInput" style="width:20%; margin-bottom:2%;" placeholder="Enter the date"
+				autofocus required>
+			<label for="signImage"
+				style="margin-left:22%; position:static; font-weight: bold; color: rgba(1, 33, 55, 0.84); font-size: large;">Upload your
+				Signature</label>
+			<input type="file" id="signInput" onchange="updateSign('signInput', 'sign')"
+				style="height: 30px; margin-top: 0%; margin-left: 20%;" placeholder="Upload your signature in jpg" autofocus
+				required>
+			<div style="padding-left: 24%;">
+				<a href="#resume">
+					<button class="button" href="#resume">Update Resume</button>
+				</a>
+				<button onclick="downloadPDF()" class="button">Download PDF</button>
+			</div>
+
+
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+			<script src="/js files/template2.js"></script>
+			<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/681d05354c5e10190a22d989/1iqoloms9';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+	</body>
+
+</html>

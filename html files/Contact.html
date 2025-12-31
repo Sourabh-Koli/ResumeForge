@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeForge - Build Your Resume</title>
+    <link rel="shortcut icon" href="/images/profile.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .fade-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-up.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .card-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+<!-- Navbar -->
+<!-- Navbar -->
+<nav class="bg-gray-900 text-white sticky top-[0px] z-50">
+    <div class="container mx-auto flex justify-between items-center px-4 py-4">
+        <div class="flex items-center space-x-2">
+            <img src="/images/profile.png" alt="Logo" class="w-8 h-8 rounded-full">
+            <span class="text-xl font-bold">ResumeForge</span>
+        </div>
+        <div class="hidden md:flex space-x-6">
+            
+            <a href="./Templates.html" class="hover:text-blue-400 transition">Templates</a>
+            <a href="./pricing.html" class="hover:text-blue-400 transition">Pricing</a>
+            <a href="./Contact.html" class="hover:text-blue-400 transition">Contact</a>
+            <a href="./Login.html" class="hover:text-blue-400 transition">Login</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<main class="p-10 max-w-7xl mx-auto bg-teal-100">
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Akash Kurmi -->
+        <section class="bg-white rounded-xl shadow-md p-6 hover:shadow-2xl hover:bg-blue-50 transition-all duration-300 card-hover border-t-4 border-green-400">
+            <div class="flex flex-col items-center text-center">
+                <img src="/images/AkashKimg.jpg" alt="Akash Kurmi" class="w-32 h-32 rounded-full border-4 border-green-400 object-cover mb-4">
+                <h2 class="text-lg font-semibold text-blue-700">Akash Kurmi</h2>
+            </div>
+            <div class="mt-6">
+                <h3 class="text-xl font-bold mb-3">Information</h3>
+                <ul class="space-y-1 text-sm">
+                    <li>Branch: B.Tech Computer Science</li>
+                    <li>University: Shri Vaishnav Vidyapeeth Viswavidyalaya, Indore (M.P.)</li>
+                    <li>Email: <a href="mailto:kurmiakash@gmail.com" class="text-blue-500 hover:underline">kurmiakash@gmail.com</a></li>
+                    <li>Mobile: +91 93019 07693</li>
+                    <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" class="text-blue-500 hover:underline" target="_blank">View Profile</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Akash Kachava -->
+        <section class="bg-white rounded-xl shadow-md p-6 hover:shadow-2xl hover:bg-blue-50 transition-all duration-300 card-hover border-t-4 border-blue-400">
+            <div class="flex flex-col items-center text-center">
+                <img src="/images/aku.jpg" alt="Akash Kachava" class="w-32 h-32 rounded-full border-4 border-blue-400 object-cover mb-4">
+                <h2 class="text-lg font-semibold text-blue-700">Akash Kachava</h2>
+            </div>
+            <div class="mt-6">
+                <h3 class="text-xl font-bold mb-3">Information</h3>
+                <ul class="space-y-1 text-sm">
+                    <li>Branch: B.Tech Computer Science</li>
+                    <li>University: Shri Vaishnav Vidyapeeth Viswavidyalaya, Indore (M.P.)</li>
+                    <li>Email: <a href="mailto:kachavaakash@gmail.com" class="text-blue-500 hover:underline">kachavaakash@gmail.com</a></li>
+                    <li>Mobile: +91 96917 73822</li>
+                    <li>LinkedIn: <a href="https://linkedin.com/in/akashkachava" class="text-blue-500 hover:underline" target="_blank">View Profile</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Shubham Dhadse -->
+        <section class="bg-white rounded-xl shadow-md p-6 hover:shadow-2xl hover:bg-blue-50 transition-all duration-300 card-hover border-t-4 border-purple-400">
+            <div class="flex flex-col items-center text-center">
+                <img src="/images/Shubhamimg.jpg" alt="Shubham Dhadse" class="w-32 h-32 rounded-full border-4 border-purple-400 object-cover mb-4">
+                <h2 class="text-lg font-semibold text-blue-700">Shubham Dhadse</h2>
+            </div>
+            <div class="mt-6">
+                <h3 class="text-xl font-bold mb-3">Information</h3>
+                <ul class="space-y-1 text-sm">
+                    <li>Branch: B.Tech Computer Science</li>
+                    <li>University: Shri Vaishnav Vidyapeeth Viswavidyalaya, Indore (M.P.)</li>
+                    <li>Email: <a href="mailto:dhadseshubham@gmail.com" class="text-blue-500 hover:underline">dhadseshubham@gmail.com</a></li>
+                    <li>Mobile: +91 89622 93124</li>
+                    <li>LinkedIn: <a href="https://linkedin.com/in/shubhamdhadse" class="text-blue-500 hover:underline" target="_blank">View Profile</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sourabh Koli -->
+        <section class="bg-white rounded-xl shadow-md p-6 hover:shadow-2xl hover:bg-blue-50 transition-all duration-300 card-hover border-t-4 border-yellow-400">
+            <div class="flex flex-col items-center text-center">
+                <img src="/images/sk.jpg" alt="Sourabh Koli" class="w-32 h-32 rounded-full border-4 border-yellow-400 object-cover mb-4">
+                <h2 class="text-lg font-semibold text-blue-700">Sourabh Koli</h2>
+            </div>
+            <div class="mt-6">
+                <h3 class="text-xl font-bold mb-3">Information</h3>
+                <ul class="space-y-1 text-sm">
+                    <li>Branch: B.Tech Computer Science</li>
+                    <li>University: Shri Vaishnav Vidyapeeth Viswavidyalaya, Indore (M.P.)</li>
+                    <li>Email: <a href="mailto:kolisourabh272@gmail.com" class="text-blue-500 hover:underline">kolisourabh272@gmail.com</a></li>
+                    <li>Mobile: +91 98938 77520</li>
+                    <li>LinkedIn: <a href="https://linkedin.com/in/sourabh-koli" class="text-blue-500 hover:underline" target="_blank">View Profile</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</main>
+
+<!-- Footer -->
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-200 py-8 fade-up">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+            <div>
+                <h4 class="font-semibold mb-2">Product</h4>
+                <ul class="space-y-1">
+                    <li><a href="#features" class="hover:underline">Features</a></li>
+                    <li><a href="#templates" class="hover:underline">Templates</a></li>
+                    <li><a href="#pricing" class="hover:underline">Pricing</a></li>
+                    <li><a href="#updates" class="hover:underline">Updates</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-2">Company</h4>
+                <ul class="space-y-1">
+                    <li><a href="#about" class="hover:underline">About</a></li>
+                    <li><a href="#blog" class="hover:underline">Blog</a></li>
+                    <li><a href="#careers" class="hover:underline">Careers</a></li>
+                    <li><a href="#contact" class="hover:underline">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-2">Resources</h4>
+                <ul class="space-y-1">
+                    <li><a href="#guide" class="hover:underline">Guide</a></li>
+                    <li><a href="#examples" class="hover:underline">Examples</a></li>
+                    <li><a href="#support" class="hover:underline">Support</a></li>
+                    <li><a href="#faq" class="hover:underline">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-2">Legal</h4>
+                <ul class="space-y-1">
+                    <li><a href="#privacy" class="hover:underline">Privacy</a></li>
+                    <li><a href="#terms" class="hover:underline">Terms</a></li>
+                    <li><a href="#security" class="hover:underline">Security</a></li>
+                    <li><a href="#cookies" class="hover:underline">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-between items-center border-t border-gray-700 pt-4">
+            <div class="flex items-center space-x-2">
+                <span>✨</span>
+                <span class="font-bold text-lg">ResumeForge</span>
+            </div>
+            <div class="text-sm mt-2 md:mt-0">
+                © <span id="year"></span> ResumeForge. All rights reserved.
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Adding fade-in on scroll effect
+    document.addEventListener('DOMContentLoaded', () => {
+        const fadeUpElements = document.querySelectorAll('.fade-up');
+        const scrollHandler = () => {
+            fadeUpElements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight) {
+                    el.classList.add('show');
+                }
+            });
+        };
+        window.addEventListener('scroll', scrollHandler);
+        scrollHandler();
+    });
+</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/681d05354c5e10190a22d989/1iqoloms9';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+</html>
